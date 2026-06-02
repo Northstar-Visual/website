@@ -3,6 +3,17 @@
 (function () {
   'use strict';
 
+  /* ── Baseurl prefix — fix hardcoded /absolute links on subpath deploys ── */
+  const baseurl = document.body.dataset.baseurl || '';
+  if (baseurl) {
+    document.querySelectorAll('a[href]').forEach(a => {
+      const href = a.getAttribute('href');
+      if (href && href.startsWith('/') && !href.startsWith(baseurl)) {
+        a.setAttribute('href', baseurl + href);
+      }
+    });
+  }
+
   const header    = document.querySelector('.site-header');
   const scrollBtn = document.getElementById('scroll-top');
   const navToggle = document.getElementById('nav-toggle');

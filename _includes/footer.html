@@ -4,7 +4,7 @@
 
       <!-- Brand col -->
       <div class="footer__brand">
-        <a href="/" class="site-logo" aria-label="{{ site.data.site.name }} — Home">
+        <a href="{{ '/' | relative_url }}" class="site-logo" aria-label="{{ site.data.site.name }} — Home">
           <svg width="32" height="32" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <polygon points="18,2 34,12 34,24 18,34 2,24 2,12" fill="none" stroke="#beb087" stroke-width="2"/>
             <polygon points="18,8 28,14 28,22 18,28 8,22 8,14" fill="#beb087" fill-opacity="0.18"/>
@@ -40,7 +40,7 @@
         <h3 class="footer__heading">Products</h3>
         <ul class="footer__links">
           {% for link in site.data.navigation.footer_products %}
-          <li><a href="{{ link.url }}">{{ link.label }}</a></li>
+          <li><a href="{{ link.url | relative_url }}">{{ link.label }}</a></li>
           {% endfor %}
         </ul>
       </div>
@@ -50,7 +50,7 @@
         <h3 class="footer__heading">Company</h3>
         <ul class="footer__links">
           {% for link in site.data.navigation.footer_company %}
-          <li><a href="{{ link.url }}">{{ link.label }}</a></li>
+          <li><a href="{{ link.url | relative_url }}">{{ link.label }}</a></li>
           {% endfor %}
         </ul>
       </div>
@@ -66,7 +66,7 @@
 {{ site.data.site.address_line3 }}
 {{ site.data.site.address_line4 }}</p>
         </div>
-        <a href="{{ site.data.site.catalogue_pdf }}" class="btn btn--outline btn--sm" style="margin-top:1.25rem;" download>
+        <a href="{{ site.data.site.catalogue_pdf | relative_url }}" class="btn btn--outline btn--sm" style="margin-top:1.25rem;" download>
           <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 12l-4-4h2.5V2h3v6H12L8 12zm-5 2h10v-1.5H3V14z"/></svg>
           {{ site.data.site.catalogue_label }}
         </a>
@@ -82,7 +82,7 @@
       </p>
       <nav class="footer__legal" aria-label="Legal">
         {% for link in site.data.navigation.footer_legal %}
-        <a href="{{ link.url }}">{{ link.label }}</a>
+        <a href="{{ link.url | relative_url }}">{{ link.label }}</a>
         {% endfor %}
       </nav>
     </div>
