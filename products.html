@@ -1,0 +1,211 @@
+---
+layout: page
+title: Products
+eyebrow: LED Display Technology
+subtitle: Precision-engineered LED display solutions for every installation type and environment.
+description: Browse Northstar Visual's full range of LED display products — indoor fine pitch, outdoor, rental, transparent, creative, and control systems.
+permalink: /products/
+---
+
+{% assign s = site.data.site %}
+
+<!-- Category filter -->
+<section class="section section--dark" style="padding-bottom:0;">
+  <div class="container">
+    <div class="product-filters" role="list" aria-label="Filter by category">
+      <button class="filter-btn active" data-filter="all" role="listitem">All Products</button>
+      <button class="filter-btn" data-filter="indoor" role="listitem">Indoor LED</button>
+      <button class="filter-btn" data-filter="outdoor" role="listitem">Outdoor LED</button>
+      <button class="filter-btn" data-filter="rental" role="listitem">Rental &amp; Stage</button>
+      <button class="filter-btn" data-filter="creative" role="listitem">Creative LED</button>
+      <button class="filter-btn" data-filter="control" role="listitem">Control Systems</button>
+    </div>
+  </div>
+</section>
+
+<!-- Product listing -->
+<section class="section section--dark" id="all">
+  <div class="container">
+
+    <!-- Indoor -->
+    <div id="indoor" class="product-category-group" style="scroll-margin-top:90px;">
+      <h2 class="product-category-heading" data-fade>Indoor LED</h2>
+      <div class="card-grid product-grid" data-fade>
+        {% for product in site.data.products %}
+        {% if product.category == "indoor" %}
+        <article class="card product-card" id="{{ product.id }}" data-category="{{ product.category }}" style="scroll-margin-top:90px;">
+          <div class="card__image {% unless product.image %}card__image--placeholder{% endunless %}">
+            {% if product.image %}
+            <img src="{{ product.image }}" alt="{{ product.image_alt }}" loading="lazy">
+            {% else %}
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="#beb087" stroke-width="1.5" opacity="0.3" aria-hidden="true"><rect x="8" y="16" width="48" height="32" rx="2"/><line x1="8" y1="24" x2="56" y2="24"/><line x1="24" y1="16" x2="24" y2="48"/></svg>
+            {% endif %}
+          </div>
+          <div class="card__body">
+            <span class="card__tag">{{ product.category | capitalize }}</span>
+            <h3 class="card__title">{{ product.name }}</h3>
+            <p class="card__excerpt">{{ product.description }}</p>
+            {% if product.specs %}
+            <table class="spec-table">
+              {% for spec in product.specs %}
+              <tr><th>{{ spec.label }}</th><td>{{ spec.value }}</td></tr>
+              {% endfor %}
+            </table>
+            {% endif %}
+          </div>
+        </article>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+
+    <hr class="divider" style="margin:3rem 0;">
+
+    <!-- Outdoor -->
+    <div id="outdoor" class="product-category-group" style="scroll-margin-top:90px;">
+      <h2 class="product-category-heading" data-fade>Outdoor LED</h2>
+      <div class="card-grid product-grid" data-fade>
+        {% for product in site.data.products %}
+        {% if product.category == "outdoor" %}
+        <article class="card product-card" id="{{ product.id }}" data-category="{{ product.category }}" style="scroll-margin-top:90px;">
+          <div class="card__image {% unless product.image %}card__image--placeholder{% endunless %}">
+            {% if product.image %}
+            <img src="{{ product.image }}" alt="{{ product.image_alt }}" loading="lazy">
+            {% else %}
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="#beb087" stroke-width="1.5" opacity="0.3" aria-hidden="true"><rect x="8" y="16" width="48" height="32" rx="2"/><line x1="8" y1="24" x2="56" y2="24"/><line x1="24" y1="16" x2="24" y2="48"/></svg>
+            {% endif %}
+          </div>
+          <div class="card__body">
+            <span class="card__tag">{{ product.category | capitalize }}</span>
+            <h3 class="card__title">{{ product.name }}</h3>
+            <p class="card__excerpt">{{ product.description }}</p>
+            {% if product.specs %}
+            <table class="spec-table">
+              {% for spec in product.specs %}
+              <tr><th>{{ spec.label }}</th><td>{{ spec.value }}</td></tr>
+              {% endfor %}
+            </table>
+            {% endif %}
+          </div>
+        </article>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+
+    <hr class="divider" style="margin:3rem 0;">
+
+    <!-- Rental -->
+    <div id="rental" class="product-category-group" style="scroll-margin-top:90px;">
+      <h2 class="product-category-heading" data-fade>Rental &amp; Stage</h2>
+      <div class="card-grid product-grid" data-fade>
+        {% for product in site.data.products %}
+        {% if product.category == "rental" %}
+        <article class="card product-card" id="{{ product.id }}" data-category="{{ product.category }}" style="scroll-margin-top:90px;">
+          <div class="card__image {% unless product.image %}card__image--placeholder{% endunless %}">
+            {% if product.image %}
+            <img src="{{ product.image }}" alt="{{ product.image_alt }}" loading="lazy">
+            {% else %}
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="#beb087" stroke-width="1.5" opacity="0.3" aria-hidden="true"><rect x="8" y="16" width="48" height="32" rx="2"/><line x1="8" y1="24" x2="56" y2="24"/><line x1="24" y1="16" x2="24" y2="48"/></svg>
+            {% endif %}
+          </div>
+          <div class="card__body">
+            <span class="card__tag">Rental &amp; Stage</span>
+            <h3 class="card__title">{{ product.name }}</h3>
+            <p class="card__excerpt">{{ product.description }}</p>
+            {% if product.specs %}
+            <table class="spec-table">
+              {% for spec in product.specs %}
+              <tr><th>{{ spec.label }}</th><td>{{ spec.value }}</td></tr>
+              {% endfor %}
+            </table>
+            {% endif %}
+          </div>
+        </article>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+
+    <hr class="divider" style="margin:3rem 0;">
+
+    <!-- Creative -->
+    <div id="creative" class="product-category-group" style="scroll-margin-top:90px;">
+      <h2 class="product-category-heading" data-fade>Creative LED</h2>
+      <div class="card-grid product-grid" data-fade>
+        {% for product in site.data.products %}
+        {% if product.category == "creative" %}
+        <article class="card product-card" id="{{ product.id }}" data-category="{{ product.category }}" style="scroll-margin-top:90px;">
+          <div class="card__image {% unless product.image %}card__image--placeholder{% endunless %}">
+            {% if product.image %}
+            <img src="{{ product.image }}" alt="{{ product.image_alt }}" loading="lazy">
+            {% else %}
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="#beb087" stroke-width="1.5" opacity="0.3" aria-hidden="true"><rect x="8" y="16" width="48" height="32" rx="2"/><line x1="8" y1="24" x2="56" y2="24"/><line x1="24" y1="16" x2="24" y2="48"/></svg>
+            {% endif %}
+          </div>
+          <div class="card__body">
+            <span class="card__tag">Creative</span>
+            <h3 class="card__title">{{ product.name }}</h3>
+            <p class="card__excerpt">{{ product.description }}</p>
+            {% if product.specs %}
+            <table class="spec-table">
+              {% for spec in product.specs %}
+              <tr><th>{{ spec.label }}</th><td>{{ spec.value }}</td></tr>
+              {% endfor %}
+            </table>
+            {% endif %}
+          </div>
+        </article>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+
+    <hr class="divider" style="margin:3rem 0;">
+
+    <!-- Control -->
+    <div id="control" class="product-category-group" style="scroll-margin-top:90px;">
+      <h2 class="product-category-heading" data-fade>Control Systems</h2>
+      <div class="card-grid product-grid" data-fade>
+        {% for product in site.data.products %}
+        {% if product.category == "control" %}
+        <article class="card product-card" id="{{ product.id }}" data-category="{{ product.category }}" style="scroll-margin-top:90px;">
+          <div class="card__image {% unless product.image %}card__image--placeholder{% endunless %}">
+            {% if product.image %}
+            <img src="{{ product.image }}" alt="{{ product.image_alt }}" loading="lazy">
+            {% else %}
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="#beb087" stroke-width="1.5" opacity="0.3" aria-hidden="true"><rect x="8" y="16" width="48" height="32" rx="2"/><line x1="8" y1="24" x2="56" y2="24"/><line x1="24" y1="16" x2="24" y2="48"/></svg>
+            {% endif %}
+          </div>
+          <div class="card__body">
+            <span class="card__tag">Control</span>
+            <h3 class="card__title">{{ product.name }}</h3>
+            <p class="card__excerpt">{{ product.description }}</p>
+            {% if product.specs %}
+            <table class="spec-table">
+              {% for spec in product.specs %}
+              <tr><th>{{ spec.label }}</th><td>{{ spec.value }}</td></tr>
+              {% endfor %}
+            </table>
+            {% endif %}
+          </div>
+        </article>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Catalogue CTA -->
+<section class="catalogue-cta" aria-label="Download catalogue">
+  <div class="container">
+    <h2 class="catalogue-cta__title" data-fade>Get the Full Specifications</h2>
+    <p class="catalogue-cta__body" data-fade>Download our complete product catalogue for full technical data, dimensions, and installation guidance.</p>
+    <a href="{{ s.catalogue_pdf }}" class="btn btn--primary" download>
+      <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 12l-4-4h2.5V2h3v6H12L8 12zm-5 2h10v-1.5H3V14z"/></svg>
+      {{ s.catalogue_label }}
+    </a>
+  </div>
+</section>

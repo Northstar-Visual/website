@@ -1,0 +1,130 @@
+# ─────────────────────────────────────────────────────────────
+# Markets / Verticals
+#
+# To add a market: copy a block and append to the list.
+# Required: id, name, tagline, description, image
+# Optional: featured, products (list of product IDs to highlight)
+# ─────────────────────────────────────────────────────────────
+
+- id: broadcast
+  name: Broadcast & Studio
+  tagline: Studio-grade accuracy for every production
+  description: >
+    Northstar Visual supplies broadcast-grade LED video walls to news studios,
+    virtual production stages, and live broadcast environments. Our fine-pitch
+    panels deliver the colour accuracy and moire-free performance that
+    production teams demand, with seamless integration into existing signal
+    chains and vision-mixing workflows.
+  body_extended: >
+    From weather map backdrops to immersive XR stages, our broadcast solutions
+    support pixel pitches as fine as 0.9 mm and refresh rates up to 3840 Hz —
+    eliminating roll bars at all standard camera shutter speeds. Installations
+    include news channels, national broadcasters, and virtual production
+    facilities.
+  image: /assets/images/markets/broadcast.jpg
+  image_alt: LED video wall behind news anchor in studio
+  featured: true
+  products:
+    - nova-fine-pitch
+    - nova-control
+
+- id: events
+  name: Events & Entertainment
+  tagline: Spectacular scale for live experiences
+  description: >
+    Concert tours, awards ceremonies, product launches, and festivals — Northstar
+    Visual rental and installation products deliver high-impact visuals for the
+    UK's most demanding live events. Our Swift Rental Series is a trusted
+    choice with touring crews for its reliability, weight, and speed of assembly.
+  body_extended: >
+    We work directly with production companies, rental houses, and AV integrators
+    to specify the right solution for each event. Our hire fleet and technical
+    support team are available for both short-notice dry hire and full-service
+    crewed productions.
+  image: /assets/images/markets/events.jpg
+  image_alt: Large LED stage screen at a music festival
+  featured: true
+  products:
+    - swift-rental
+    - nova-control
+
+- id: retail
+  name: Retail & Hospitality
+  tagline: Attract attention and drive footfall
+  description: >
+    High-brightness window displays, in-store video walls, and architectural
+    transparent LED installations that transform retail environments. From
+    luxury flagship stores to high-street multiples, Northstar Visual helps
+    brands create memorable in-store experiences.
+  body_extended: >
+    Our Veil Transparent series allows full window visibility while displaying
+    promotional content — outperforming conventional digital-signage without
+    blocking natural light. Hotel lobbies, casino floors, and hospitality venues
+    use our creative LED solutions to establish an unmistakable visual identity.
+  image: /assets/images/markets/retail.jpg
+  image_alt: Transparent LED display in a luxury shop window
+  featured: true
+  products:
+    - veil-transparent
+    - arc-creative
+    - apex-indoor
+
+- id: corporate
+  name: Corporate & Enterprise
+  tagline: Professional environments demand precision displays
+  description: >
+    Lobby video walls, boardroom presentation screens, meeting-room signage, and
+    building-exterior branding. Northstar Visual corporate installations deliver
+    always-on reliability with the visual quality that reflects your brand.
+  body_extended: >
+    We partner with workplace AV integrators, fit-out contractors, and
+    facilities managers to design and install LED displays that perform day
+    in, day out — backed by preventative maintenance contracts and 24/7
+    technical support.
+  image: /assets/images/markets/corporate.jpg
+  image_alt: LED video wall in a corporate headquarters lobby
+  featured: false
+  products:
+    - nova-fine-pitch
+    - apex-indoor
+    - nova-control
+
+- id: sports
+  name: Sports Venues
+  tagline: Captivate every fan in every seat
+  description: >
+    Stadium scoreboards, perimeter boards, concourse displays, and bowl-facing
+    LED ribbons. Our outdoor and indoor display systems are trusted at UK
+    football grounds, arenas, and motorsport circuits to deliver reliable
+    high-impact content to large audiences.
+  body_extended: >
+    Northstar Visual products meet the technical requirements of major sporting
+    bodies and broadcasters. We handle the full project lifecycle — from initial
+    structural surveys and planning to installation, commissioning, and ongoing
+    maintenance agreements.
+  image: /assets/images/markets/sports.jpg
+  image_alt: LED scoreboard at a UK football stadium
+  featured: false
+  products:
+    - sentinel-outdoor
+    - apex-indoor
+    - nova-control
+
+- id: dooh
+  name: Digital Out-of-Home
+  tagline: Outdoor advertising that commands attention
+  description: >
+    Roadside digital billboards, transport-hub displays, and high-footfall
+    outdoor installations. Northstar Visual's Sentinel Outdoor Series combines
+    IP65 weatherproofing with brightness levels that remain fully legible in
+    direct sunlight — keeping advertising content visible and impactful
+    regardless of conditions.
+  body_extended: >
+    We supply DOOH operators, media owners, and local authorities with
+    outdoor LED infrastructure built to last. All outdoor products carry full
+    CE certification and meet UK planning authority brightness guidelines.
+  image: /assets/images/markets/dooh.jpg
+  image_alt: Outdoor LED billboard in a city centre
+  featured: false
+  products:
+    - sentinel-outdoor

@@ -1,0 +1,36 @@
+title: Northstar Visual
+description: Premium LED display and visual technology solutions for broadcast, events, retail, and corporate environments.
+baseurl: ""
+url: "https://www.northstarvisual.co.uk"
+lang: en_GB
+locale: en_GB
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+# Files/folders to exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - memory/
+  - Claude.md
+  - "*.sh"
+  - node_modules/
+  - vendor/
+
+# Ensure CSS/JS assets are not treated as pages
+sass:
+  style: compressed

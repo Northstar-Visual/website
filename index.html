@@ -1,0 +1,187 @@
+---
+layout: default
+title: Home
+description: Northstar Visual — premium LED display and visual technology solutions for broadcast, events, retail, sports, and corporate environments across the UK.
+---
+
+{% assign h = site.data.home %}
+{% assign s = site.data.site %}
+
+<!-- ── Hero ── -->
+<section class="hero" aria-label="Hero">
+  <div class="hero__bg-image" style="background-image: url('{{ h.hero.bg_image }}');"></div>
+  <div class="hero__bg"></div>
+  <div class="container">
+    <div class="hero__content" data-fade>
+      <p class="hero__eyebrow">{{ h.hero.eyebrow }}</p>
+      <h1 class="hero__title">{{ h.hero.title }}</h1>
+      <p class="hero__subtitle">{{ h.hero.subtitle }}</p>
+      <div class="hero__actions">
+        <a href="{{ h.hero.cta_primary_url }}" class="btn btn--primary">{{ h.hero.cta_primary_label }}</a>
+        <a href="{{ h.hero.cta_secondary_url }}" class="btn btn--outline">{{ h.hero.cta_secondary_label }}</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Promo sections ── -->
+{% for promo in h.promo_sections %}
+<section class="section {% cycle 'section--dark', 'section--mid', 'section--dark' %}">
+  <div class="container">
+    <div class="promo {% cycle '', 'promo--reverse', '' %}" data-fade>
+      <div class="promo__image">
+        {% if promo.image %}
+        <img src="{{ promo.image }}" alt="{{ promo.image_alt }}" loading="lazy">
+        {% else %}
+        <div class="promo__image-placeholder" aria-hidden="true"></div>
+        {% endif %}
+      </div>
+      <div class="promo__content">
+        <p class="section__eyebrow">{{ promo.eyebrow }}</p>
+        <h2 class="promo__title">{{ promo.title }}</h2>
+        <p class="promo__body">{{ promo.body }}</p>
+        <a href="{{ promo.cta_url }}" class="btn btn--ghost">
+          {{ promo.cta_label }}
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="8" x2="13" y2="8"/><polyline points="9 4 13 8 9 12"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+{% endfor %}
+
+<!-- ── Featured products ── -->
+{% assign featured_products = site.data.products | where: "featured", true %}
+{% if featured_products.size > 0 %}
+<section class="section section--card">
+  <div class="container">
+    <header class="section__header section__header--centered" data-fade>
+      <span class="section__eyebrow">Products</span>
+      <h2 class="section__title">{{ h.featured_products_heading }}</h2>
+    </header>
+    <div class="card-grid">
+      {% for product in featured_products %}
+      <article class="card" data-fade>
+        <div class="card__image {% unless product.image %}card__image--placeholder{% endunless %}">
+          {% if product.image %}
+          <img src="{{ product.image }}" alt="{{ product.image_alt }}" loading="lazy">
+          {% else %}
+          <svg width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="#beb087" stroke-width="1.5" opacity="0.3" aria-hidden="true"><rect x="8" y="16" width="48" height="32" rx="2"/><line x1="8" y1="24" x2="56" y2="24"/><line x1="24" y1="16" x2="24" y2="48"/></svg>
+          {% endif %}
+        </div>
+        <div class="card__body">
+          <span class="card__tag">{{ product.category | capitalize }}</span>
+          <h3 class="card__title">{{ product.name }}</h3>
+          <p class="card__excerpt">{{ product.tagline }}</p>
+          {% if product.highlight_spec %}
+          <p style="font-size:0.8rem; color: var(--color-accent); font-weight:600; margin-bottom:1rem;">{{ product.highlight_spec }}</p>
+          {% endif %}
+          <a href="/products/#{{ product.id }}" class="card__link">
+            View Details
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="8" x2="13" y2="8"/><polyline points="9 4 13 8 9 12"/></svg>
+          </a>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    <div class="text-center" style="margin-top:2.5rem;">
+      <a href="/products/" class="btn btn--outline">View All Products</a>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<!-- ── Featured markets ── -->
+{% assign featured_markets = site.data.markets | where: "featured", true %}
+{% if featured_markets.size > 0 %}
+<section class="section section--mid">
+  <div class="container">
+    <header class="section__header section__header--centered" data-fade>
+      <span class="section__eyebrow">Markets</span>
+      <h2 class="section__title">{{ h.featured_markets_heading }}</h2>
+    </header>
+    <div class="card-grid card-grid--2">
+      {% for market in featured_markets %}
+      <article class="card card--horizontal" data-fade>
+        <div class="card__image {% unless market.image %}card__image--placeholder{% endunless %}">
+          {% if market.image %}
+          <img src="{{ market.image }}" alt="{{ market.image_alt }}" loading="lazy">
+          {% else %}
+          <svg width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="#beb087" stroke-width="1.5" opacity="0.3" aria-hidden="true"><circle cx="32" cy="32" r="22"/><line x1="32" y1="10" x2="32" y2="32"/><line x1="32" y1="32" x2="48" y2="20"/></svg>
+          {% endif %}
+        </div>
+        <div class="card__body">
+          <span class="card__tag">Market</span>
+          <h3 class="card__title">{{ market.name }}</h3>
+          <p class="card__excerpt">{{ market.tagline }}</p>
+          <a href="/market/#{{ market.id }}" class="card__link">
+            Learn More
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="8" x2="13" y2="8"/><polyline points="9 4 13 8 9 12"/></svg>
+          </a>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    <div class="text-center" style="margin-top:2.5rem;">
+      <a href="/market/" class="btn btn--outline">All Markets</a>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<!-- ── Featured case studies ── -->
+{% assign featured_cs = site.data.case_studies | where: "featured", true %}
+{% if featured_cs.size > 0 %}
+<section class="section section--dark">
+  <div class="container">
+    <header class="section__header section__header--centered" data-fade>
+      <span class="section__eyebrow">Case Studies</span>
+      <h2 class="section__title">{{ h.featured_case_studies_heading }}</h2>
+    </header>
+    <div class="card-grid">
+      {% for cs in featured_cs %}
+      <article class="card" data-fade>
+        <div class="card__image {% unless cs.image %}card__image--placeholder{% endunless %}">
+          {% if cs.image %}
+          <img src="{{ cs.image }}" alt="{{ cs.image_alt }}" loading="lazy">
+          {% else %}
+          <svg width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="#beb087" stroke-width="1.5" opacity="0.3" aria-hidden="true"><rect x="8" y="8" width="48" height="48" rx="2"/><line x1="8" y1="24" x2="56" y2="24"/><circle cx="20" cy="16" r="3"/></svg>
+          {% endif %}
+        </div>
+        <div class="card__body">
+          <span class="card__tag">{{ cs.market }}</span>
+          <h3 class="card__title">{{ cs.title }}</h3>
+          <p class="card__excerpt">{{ cs.tagline }}</p>
+          <a href="/case-studies/#{{ cs.id }}" class="card__link">
+            Read More
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="8" x2="13" y2="8"/><polyline points="9 4 13 8 9 12"/></svg>
+          </a>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    <div class="text-center" style="margin-top:2.5rem;">
+      <a href="/case-studies/" class="btn btn--outline">All Case Studies</a>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<!-- ── Catalogue CTA ── -->
+<section class="catalogue-cta" aria-label="Download catalogue">
+  <div class="container">
+    <svg class="catalogue-cta__icon" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#beb087" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <rect x="8" y="4" width="32" height="40" rx="3"/>
+      <line x1="16" y1="16" x2="32" y2="16"/>
+      <line x1="16" y1="24" x2="32" y2="24"/>
+      <line x1="16" y1="32" x2="24" y2="32"/>
+      <polyline points="28 34 24 38 20 34"/>
+    </svg>
+    <h2 class="catalogue-cta__title" data-fade>Download the Full Product Catalogue</h2>
+    <p class="catalogue-cta__body" data-fade>The complete Northstar Visual product guide — full specifications, technical data, and installation guidance for every product in our range.</p>
+    <a href="{{ s.catalogue_pdf }}" class="btn btn--primary" download data-fade>
+      <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 12l-4-4h2.5V2h3v6H12L8 12zm-5 2h10v-1.5H3V14z"/></svg>
+      {{ s.catalogue_label }}
+    </a>
+  </div>
+</section>

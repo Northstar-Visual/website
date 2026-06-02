@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en-GB' }}">
+<head>
+  {% include head.html %}
+</head>
+<body>
+{% include gtm-body.html %}
+{% include skip-link.html %}
+{% include header.html %}
+
+<main id="main-content" tabindex="-1">
+  {{ content }}
+</main>
+
+{% include footer.html %}
+
+<!-- Theme switcher -->
+<div class="theme-switcher" id="theme-switcher" aria-label="Colour theme">
+  <div class="theme-switcher__panel" id="theme-panel" role="dialog" aria-label="Choose colour theme">
+
+    <span class="theme-switcher__label">Accent</span>
+    <div class="theme-swatches">
+      <button class="theme-swatch active"             data-prop="accent" data-value="#beb087" data-hover="#d4c9a0" style="background:#beb087;" title="Tan"         aria-pressed="true"></button>
+      <button class="theme-swatch"                    data-prop="accent" data-value="#7C8C7A" data-hover="#96a892" style="background:#7C8C7A;" title="Sage Green"   aria-pressed="false"></button>
+      <button class="theme-swatch"                    data-prop="accent" data-value="#A9B09A" data-hover="#bcc4af" style="background:#A9B09A;" title="Light Sage"   aria-pressed="false"></button>
+      <button class="theme-swatch"                    data-prop="accent" data-value="#E8E6E1" data-hover="#f5f3ef" style="background:#E8E6E1;" title="Bone White"   aria-pressed="false"></button>
+      <button class="theme-swatch theme-swatch--dark" data-prop="accent" data-value="#1F221D" data-hover="#2a2f27" style="background:#1F221D;" title="Dark Forest"  aria-pressed="false"></button>
+    </div>
+
+  </div>
+  <button class="theme-switcher__toggle" id="theme-toggle" aria-expanded="false" aria-controls="theme-panel" title="Toggle colour theme">
+    <svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <circle cx="10" cy="10" r="4"/>
+      <circle cx="10" cy="3"  r="1.2" fill="currentColor" stroke="none"/>
+      <circle cx="10" cy="17" r="1.2" fill="currentColor" stroke="none"/>
+      <circle cx="3"  cy="10" r="1.2" fill="currentColor" stroke="none"/>
+      <circle cx="17" cy="10" r="1.2" fill="currentColor" stroke="none"/>
+      <circle cx="5.1"  cy="5.1"  r="1.2" fill="currentColor" stroke="none"/>
+      <circle cx="14.9" cy="14.9" r="1.2" fill="currentColor" stroke="none"/>
+      <circle cx="14.9" cy="5.1"  r="1.2" fill="currentColor" stroke="none"/>
+      <circle cx="5.1"  cy="14.9" r="1.2" fill="currentColor" stroke="none"/>
+    </svg>
+  </button>
+</div>
+
+<!-- Scroll to top -->
+<button class="scroll-top" id="scroll-top" aria-label="Scroll to top" title="Back to top">
+  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <polyline points="5 12 10 7 15 12"/>
+  </svg>
+</button>
+
+<script src="/assets/js/main.js"></script>
+</body>
+</html>

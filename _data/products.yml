@@ -1,0 +1,187 @@
+# ─────────────────────────────────────────────────────────────
+# Products
+#
+# To add a product: copy a block below and append it to the list.
+# Required fields: id, name, category, tagline, description, image
+# Optional fields: featured, specs, highlight_spec
+#
+# category must be one of: indoor | outdoor | rental | creative | control
+# image: path relative to site root, e.g. /assets/images/products/my-product.jpg
+# ─────────────────────────────────────────────────────────────
+
+- id: nova-fine-pitch
+  name: Nova Fine Pitch Series
+  category: indoor
+  tagline: Crystal-clear indoor performance
+  description: >
+    The Nova Fine Pitch Series delivers outstanding visual performance for
+    permanent indoor installations. Available in pixel pitches from 0.9 mm to
+    2.5 mm, these panels are the go-to choice for broadcast studios, corporate
+    lobbies, and high-end retail environments where detail matters.
+  image: /assets/images/products/nova-fine-pitch.jpg
+  image_alt: Nova Fine Pitch LED panel
+  featured: true
+  highlight_spec: From 0.9 mm pixel pitch
+  specs:
+    - label: Pixel Pitch
+      value: "0.9 mm – 2.5 mm"
+    - label: Brightness
+      value: "600 – 1200 nit"
+    - label: Refresh Rate
+      value: "3840 Hz"
+    - label: Colour Depth
+      value: "16-bit"
+    - label: Cabinet Size
+      value: "500 × 500 mm"
+    - label: Protection
+      value: IP30 (front)
+
+- id: apex-indoor
+  name: Apex Indoor Series
+  category: indoor
+  tagline: Versatile high-brightness panels for large-format interiors
+  description: >
+    The Apex Indoor Series offers a flexible platform for large-scale interior
+    installations. With pixel pitches from 2.5 mm to 4 mm and brightness up to
+    2000 nit, Apex panels handle everything from control-room video walls to
+    shopping-centre atriums.
+  image: /assets/images/products/apex-indoor.jpg
+  image_alt: Apex Indoor LED video wall
+  featured: false
+  highlight_spec: Up to 2000 nit brightness
+  specs:
+    - label: Pixel Pitch
+      value: "2.5 mm – 4 mm"
+    - label: Brightness
+      value: "Up to 2000 nit"
+    - label: Refresh Rate
+      value: "1920 Hz"
+    - label: Cabinet Size
+      value: "500 × 1000 mm"
+    - label: Protection
+      value: IP30 (front)
+
+- id: sentinel-outdoor
+  name: Sentinel Outdoor Series
+  category: outdoor
+  tagline: Built for the elements, made for impact
+  description: >
+    Designed to withstand the British climate, the Sentinel Outdoor Series
+    combines IP65 weatherproofing with high-brightness LEDs visible in full
+    direct sunlight. Pixel pitches from 4 mm to 10 mm cover everything from
+    roadside digital billboards to stadium perimeter boards.
+  image: /assets/images/products/sentinel-outdoor.jpg
+  image_alt: Sentinel outdoor LED billboard
+  featured: true
+  highlight_spec: IP65 — fully weatherproof
+  specs:
+    - label: Pixel Pitch
+      value: "4 mm – 10 mm"
+    - label: Brightness
+      value: "5000 – 8000 nit"
+    - label: Refresh Rate
+      value: "1920 Hz"
+    - label: Protection
+      value: IP65
+    - label: Operating Temp
+      value: "−20 °C to +60 °C"
+    - label: Cabinet Material
+      value: Die-cast aluminium
+
+- id: swift-rental
+  name: Swift Rental Series
+  category: rental
+  tagline: Fast-lock panels engineered for touring and live events
+  description: >
+    Weight-optimised and built for the rigours of live touring, Swift Rental
+    panels feature a tool-free magnetic fast-lock system and a rugged flight-case
+    solution. Available in 2.6 mm and 3.9 mm pixel pitches, Swift panels are a
+    trusted choice for concert tours, product launches, and awards ceremonies.
+  image: /assets/images/products/swift-rental.jpg
+  image_alt: Swift rental LED panels being assembled on stage
+  featured: true
+  highlight_spec: Tool-free magnetic fast-lock
+  specs:
+    - label: Pixel Pitch
+      value: "2.6 mm / 3.9 mm"
+    - label: Weight
+      value: "6.5 kg per panel"
+    - label: Cabinet Size
+      value: "500 × 500 mm"
+    - label: Brightness
+      value: "Up to 5000 nit"
+    - label: Curvature
+      value: "±10°"
+    - label: Connectivity
+      value: NovaStar / Brompton compatible
+
+- id: veil-transparent
+  name: Veil Transparent Series
+  category: creative
+  tagline: See-through LED for architecture and retail
+  description: >
+    Veil Transparent panels achieve up to 80% transparency, allowing natural
+    light and visibility through the display surface. Ideal for shop-window
+    installations, glass facades, and architectural features where a conventional
+    display would obstruct the environment.
+  image: /assets/images/products/veil-transparent.jpg
+  image_alt: Veil transparent LED display in a shop window
+  featured: true
+  highlight_spec: Up to 80% transparency
+  specs:
+    - label: Pixel Pitch
+      value: "10 mm – 20 mm"
+    - label: Transparency
+      value: "Up to 80%"
+    - label: Brightness
+      value: "Up to 3500 nit"
+    - label: Cabinet Size
+      value: "500 × 1000 mm"
+    - label: Protection
+      value: IP54
+
+- id: arc-creative
+  name: Arc Creative Solutions
+  category: creative
+  tagline: Curved and shaped LED for immersive environments
+  description: >
+    The Arc Creative platform enables concave, convex, cylindrical, and fully
+    custom LED structures. Our engineering team works with installers and set
+    designers from concept to installation, delivering immersive display
+    environments that go beyond the flat screen.
+  image: /assets/images/products/arc-creative.jpg
+  image_alt: Arc curved LED installation in a hotel lobby
+  featured: false
+  highlight_spec: Fully custom curved structures
+  specs:
+    - label: Pixel Pitch
+      value: "2.5 mm – 5 mm"
+    - label: Min. Curve Radius
+      value: "500 mm"
+    - label: Brightness
+      value: "Up to 4000 nit"
+    - label: Applications
+      value: Concave / Convex / Cylindrical / Custom
+
+- id: nova-control
+  name: Nova Control Suite
+  category: control
+  tagline: Intelligent processing and control for any scale
+  description: >
+    The Nova Control Suite integrates LED video processors, control software, and
+    monitoring tools into a single managed platform. Compatible with all major
+    signal formats and third-party LED processors (NovaStar, Brompton, Linsn), it
+    scales from a single display to complex multi-zone installations.
+  image: /assets/images/products/nova-control.jpg
+  image_alt: LED control rack and processor units
+  featured: false
+  highlight_spec: Multi-zone, multi-source control
+  specs:
+    - label: Input Formats
+      value: HDMI / SDI / DVI / DP
+    - label: Resolution
+      value: "Up to 8K processing"
+    - label: Compatibility
+      value: NovaStar / Brompton / Linsn
+    - label: Remote Monitoring
+      value: Cloud-based dashboard

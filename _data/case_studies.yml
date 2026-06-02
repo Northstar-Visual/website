@@ -1,0 +1,168 @@
+# ─────────────────────────────────────────────────────────────
+# Case Studies
+#
+# To add a case study: copy a block and append to the list.
+# Required: id, title, client, market, tagline, description, image
+# Optional: featured, results (list), products_used (list of product IDs)
+# ─────────────────────────────────────────────────────────────
+
+- id: midlands-arena-scoreboard
+  title: Midlands Arena Scoreboard Replacement
+  client: Midlands Arena (name withheld)
+  market: Sports
+  tagline: Tripling scoreboard resolution for 18,000 fans
+  description: >
+    We replaced a failing legacy scoreboard at a major Midlands sports arena
+    with a new Sentinel Outdoor main board and four Apex Indoor ribbon displays.
+    The project was completed during a six-week off-season window, with zero
+    disruption to the club's fixture programme.
+  challenge: >
+    The existing scoreboard was end-of-life with no spare parts available, and
+    the structure required upgrading to support the increased weight of modern
+    LED panels. Planning consent was needed for the increased illuminated area.
+  solution: >
+    Northstar Visual managed the full project — structural survey, planning
+    application, cabinet design, installation, and commissioning. A new steel
+    gantry was fabricated to carry the 12 × 6 m main display and integrate
+    the four perimeter ribbon boards, all driven from a single Nova Control
+    Suite processor.
+  results:
+    - "12 × 6 m main display replacing 8 × 4 m legacy board"
+    - "4 × perimeter ribbon displays added (no legacy equivalent)"
+    - "Complete installation in 6-week off-season window"
+    - "24/7 maintenance contract in place"
+  image: /assets/images/case-studies/midlands-arena.jpg
+  image_alt: Large LED scoreboard at Midlands Arena
+  featured: true
+  products_used:
+    - sentinel-outdoor
+    - apex-indoor
+    - nova-control
+
+- id: flagship-retail-window
+  title: Luxury Retail Flagship Window Installation
+  client: UK Luxury Fashion Brand (name withheld)
+  market: Retail
+  tagline: Transparent LED transforms a Mayfair flagship
+  description: >
+    A leading UK luxury fashion brand wanted to use their Mayfair store
+    windows as dynamic display media without compromising the light levels
+    and visibility that define the boutique experience. We specified and
+    installed four Veil Transparent panels across two window bays.
+  challenge: >
+    Listed building constraints prohibited permanent structural changes.
+    The installation had to be fully reversible, and the display system
+    had to operate without visible cabling on the shopfront elevation.
+  solution: >
+    Northstar Visual designed a bespoke freestanding support frame
+    compatible with the existing display surfaces. All cabling was routed
+    through the frame uprights to eliminate external visible wiring.
+    The Veil panels' 78% transparency maintained the brand's signature
+    open-storefront aesthetic.
+  results:
+    - "78% transparency — storefront aesthetic preserved"
+    - "Listed building constraints met — zero structural fixings"
+    - "Content managed remotely via cloud-based CMS"
+    - "Client reported measurable uplift in footfall within 4 weeks"
+  image: /assets/images/case-studies/retail-flagship.jpg
+  image_alt: Transparent LED panels in a luxury fashion boutique window
+  featured: true
+  products_used:
+    - veil-transparent
+
+- id: news-studio-rebuild
+  title: National News Studio Rebuild
+  client: UK Broadcast Network (name withheld)
+  market: Broadcast
+  tagline: A 180° fine-pitch backdrop for a national news programme
+  description: >
+    Following a studio rebrand, a national broadcast network commissioned
+    Northstar Visual to design and install a 180-degree curved LED backdrop
+    using Nova Fine Pitch 1.5 mm panels, replacing an ageing chromakey
+    setup with a fully virtual production environment.
+  challenge: >
+    The studio had a tight footprint, and the curved structure had to carry
+    the full weight of the display panels while allowing rapid reconfiguration
+    between the network's three programme formats. Integration with the
+    existing Brompton processing infrastructure was non-negotiable.
+  solution: >
+    We supplied a bespoke 12 m × 3.6 m curved Nova Fine Pitch 1.5 mm LED
+    wall on a motorised tracking system, allowing the backdrop to roll out of
+    shot for alternative programme configurations. The system was fully
+    integrated with the existing Brompton Tessera SX40 processor within the
+    client's broadcast signal chain.
+  results:
+    - "12 m × 3.6 m curved LED backdrop — 1.5 mm pixel pitch"
+    - "3840 Hz refresh rate — zero roll bars on broadcast cameras"
+    - "Motorised tracking for rapid reconfiguration between formats"
+    - "Fully integrated with Brompton Tessera SX40"
+  image: /assets/images/case-studies/news-studio.jpg
+  image_alt: Curved LED backdrop in a news studio
+  featured: true
+  products_used:
+    - nova-fine-pitch
+    - nova-control
+
+- id: festival-main-stage
+  title: UK Summer Festival Main Stage
+  client: UK Music Festival (name withheld)
+  market: Events
+  tagline: 300 m² of Swift Rental across three stages
+  description: >
+    A major UK summer music festival engaged Northstar Visual to supply and
+    operate 300 m² of Swift Rental LED across the Main Stage, Second Stage,
+    and DJ Tent across a four-day weekend event.
+  challenge: >
+    A strict site-access schedule left fewer than 18 hours for complete rigging
+    and commissioning across all three stages. The Main Stage deployment also
+    required ground-stacking 80 m² of panel at 8 m height alongside a
+    simultaneous delay tower build.
+  solution: >
+    Northstar Visual supplied three fully crewed installation teams, each
+    dedicated to one stage. Pre-built panel frames were loaded and tested at
+    our warehouse before dispatch, reducing on-site configuration time.
+    All panels were verified and signed off by 06:00 on opening day.
+  results:
+    - "300 m² Swift Rental deployed across 3 stages"
+    - "Full rigging and commissioning within 18-hour access window"
+    - "Zero panel failures across the 4-day event"
+    - "Framework agreement signed for 3-year festival partnership"
+  image: /assets/images/case-studies/festival-stage.jpg
+  image_alt: Large LED screen behind a performer on a festival main stage
+  featured: false
+  products_used:
+    - swift-rental
+    - nova-control
+
+- id: corporate-hq-lobby
+  title: Financial Services HQ Lobby
+  client: FTSE 250 Financial Services Firm (name withheld)
+  market: Corporate
+  tagline: A 9 × 3 m video wall defining a headquarters reception
+  description: >
+    A FTSE 250 financial services company asked Northstar Visual to design
+    a centrepiece LED installation for their new London headquarters reception
+    area — a display that would project the firm's brand values to clients
+    and staff from the moment they entered the building.
+  challenge: >
+    The lobby had 6 m floor-to-ceiling glazing on two sides, meaning the
+    display had to perform against high ambient-light levels throughout the
+    day. The 9 × 3 m installation area spanned three structural pillars,
+    requiring careful structural engineering to achieve a seamless surface.
+  solution: >
+    Northstar Visual designed a 9 × 3 m Apex Indoor 2.5 mm LED wall on a
+    custom-engineered steel frame bridging the three pillars. Front-service
+    access was built in to ensure maintenance could be completed without
+    moving furniture or disturbing the working environment. Content is
+    managed by the client's internal AV team via a Nova Control Suite.
+  results:
+    - "9 × 3 m seamless Apex Indoor 2.5 mm installation"
+    - "Custom steel frame spanning 3 structural pillars"
+    - "Front-service access for maintenance without room disruption"
+    - "Client AV team trained and operating independently"
+  image: /assets/images/case-studies/corporate-lobby.jpg
+  image_alt: Large LED video wall in a corporate headquarters lobby
+  featured: false
+  products_used:
+    - apex-indoor
+    - nova-control

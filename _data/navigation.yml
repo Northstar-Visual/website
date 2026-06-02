@@ -1,0 +1,49 @@
+# ─────────────────────────────────────────────────────────────
+# Navigation — header and footer links
+# ─────────────────────────────────────────────────────────────
+
+# Main header navigation
+main:
+  - label: Products
+    url: /products/
+  - label: Markets
+    url: /market/
+  - label: Case Studies
+    url: /case-studies/
+  - label: About
+    url: /about/
+
+# Footer columns
+footer_products:
+  - label: Indoor LED
+    url: /products/#indoor
+  - label: Outdoor LED
+    url: /products/#outdoor
+  - label: Rental & Stage
+    url: /products/#rental
+  - label: Creative LED
+    url: /products/#creative
+  - label: Control Systems
+    url: /products/#control
+
+footer_company:
+  - label: About Us
+    url: /about/#company
+  - label: Support
+    url: /about/#support
+  - label: Join Us
+    url: /about/#join-us
+  - label: Case Studies
+    url: /case-studies/
+  - label: Markets
+    url: /market/
+
+footer_legal:
+  - label: Privacy Policy
+    url: /privacy/
+  - label: Cookie Policy
+    url: /cookie-policy/
+  - label: Terms & Conditions
+    url: /terms/
+  - label: Contact
+    url: /about/#support

@@ -1,0 +1,44 @@
+# ─────────────────────────────────────────────────────────────
+# Global site settings — safe for non-technical curators to edit
+# ─────────────────────────────────────────────────────────────
+
+name: Northstar Visual
+tagline: Delivering Brilliant Visual Experiences
+company_number: "12345678"             # Companies House number
+vat_number: "GB 123 4567 89"           # VAT registration number
+
+# ── Contact ───────────────────────────────────────────────────
+email: info@northstarvisual.co.uk
+phone: "+44 (0)1234 567890"
+address_line1: Northstar Visual Ltd
+address_line2: Unit 12, Technology Park
+address_line3: "London, EC1A 1BB"
+address_line4: United Kingdom
+
+# ── Catalogue PDF ─────────────────────────────────────────────
+# Update this path when uploading a new catalogue file.
+# File lives at assets/pdf/catalogue.pdf — upload via GitHub UI.
+catalogue_pdf: /assets/pdf/catalogue.pdf
+catalogue_label: Download Catalogue
+
+# ── Forms ─────────────────────────────────────────────────────
+# Replace YOUR_FORM_ID with your Formspree endpoint.
+# Sign up free at https://formspree.io — create a new form and
+# copy the endpoint URL (looks like https://formspree.io/f/abcdefgh).
+formspree_endpoint: "https://formspree.io/f/YOUR_FORM_ID"
+
+# ── Analytics ─────────────────────────────────────────────────
+# Set to your GTM container ID (e.g. GTM-XXXXXXX) to enable tracking.
+# Set to false or leave empty to disable.
+gtm_id: false
+
+# ── Social ────────────────────────────────────────────────────
+# Set to false to hide a social link in the footer.
+social:
+  linkedin: "https://www.linkedin.com/company/northstar-visual"
+  twitter: false
+  youtube: false
+  instagram: false
+
+# ── SEO ───────────────────────────────────────────────────────
+og_image: /assets/images/og-default.jpg

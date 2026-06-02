@@ -1,0 +1,76 @@
+# ─────────────────────────────────────────────────────────────
+# Homepage content
+# Edit text, images, and CTAs here. Do not change key names.
+# ─────────────────────────────────────────────────────────────
+
+# ── Hero block ────────────────────────────────────────────────
+hero:
+  eyebrow: LED Display Solutions
+  title: "Brilliant Visuals.<br>Built to Perform."
+  subtitle: >
+    From broadcast studios to stadium scoreboards, Northstar Visual delivers
+    precision LED display technology engineered for every environment.
+  cta_primary_label: Explore Products
+  cta_primary_url: /products/
+  cta_secondary_label: Contact Us
+  cta_secondary_url: /about/#support
+  # Background image — upload to assets/images/ and update filename
+  bg_image: /assets/images/hero-bg.jpg
+
+# ── Stats bar ─────────────────────────────────────────────────
+stats:
+  - number: "15+"
+    label: Years Experience
+  - number: "500+"
+    label: Installations
+  - number: "30+"
+    label: Countries Served
+  - number: "24/7"
+    label: Technical Support
+
+# ── Promo sections ────────────────────────────────────────────
+# Each section appears as an alternating image-text block.
+# image: path to image in assets/images/
+# cta_url: where the button links to
+promo_sections:
+  - eyebrow: Technology
+    title: Engineered for Excellence
+    body: >
+      Every Northstar Visual display is designed and tested to deliver
+      consistent colour accuracy, ultra-high refresh rates, and long-term
+      reliability in demanding commercial environments. Our panels meet
+      international standards for brightness, energy efficiency, and EMC.
+    cta_label: View Products
+    cta_url: /products/
+    image: /assets/images/promo-tech.jpg
+    image_alt: Close-up of LED panel modules
+
+  - eyebrow: Service
+    title: Nationwide Installation & Support
+    body: >
+      Our certified installation teams operate across the UK, backed by a
+      dedicated technical support desk available around the clock. From
+      site survey to commissioning and ongoing maintenance, we're with you
+      at every stage.
+    cta_label: About Support
+    cta_url: /about/#support
+    image: /assets/images/promo-service.jpg
+    image_alt: Engineer installing LED display panel
+
+  - eyebrow: Solutions
+    title: A Solution for Every Environment
+    body: >
+      Whether you need a pixel-perfect broadcast backdrop, a high-impact
+      retail display, or a weatherproof outdoor installation, Northstar
+      Visual has a product range — and the project expertise — to match
+      your brief.
+    cta_label: See Our Markets
+    cta_url: /market/
+    image: /assets/images/promo-markets.jpg
+    image_alt: LED display installation in a retail environment
+
+# ── Featured sections on homepage ─────────────────────────────
+# Controls which items are shown on the homepage (featured: true in their YAML files)
+featured_products_heading: Featured Products
+featured_markets_heading: Markets We Serve
+featured_case_studies_heading: Recent Projects

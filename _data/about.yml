@@ -1,0 +1,108 @@
+# ─────────────────────────────────────────────────────────────
+# About page content
+# ─────────────────────────────────────────────────────────────
+
+# ── Company section ───────────────────────────────────────────
+company:
+  eyebrow: About Us
+  title: Who We Are
+  body: >
+    Northstar Visual is a UK-based LED display specialist with over 15 years
+    of experience designing, supplying, and installing visual technology
+    solutions for broadcast, events, retail, sports, and corporate environments.
+  body_extended: >
+    Founded in London and operating nationally, we combine the technical depth
+    of a specialist manufacturer's partner with the service reach and
+    responsiveness of an independent integrator. Every project we undertake
+    is backed by our in-house engineering team, certified installation crews,
+    and a 24/7 technical support desk.
+  image: /assets/images/about/team.jpg
+  image_alt: The Northstar Visual team at a site installation
+
+  values:
+    - title: Technical Excellence
+      body: >
+        We partner with the world's leading LED panel manufacturers and invest
+        continuously in product knowledge and installation expertise.
+    - title: Project Integrity
+      body: >
+        We say what we'll do and do what we say. Every project is managed to
+        a clear brief, timeline, and budget — with transparent communication
+        at every stage.
+    - title: Long-term Partnership
+      body: >
+        Our relationship with a client doesn't end at commissioning. We build
+        long-term partnerships through maintenance contracts, software updates,
+        and proactive technical support.
+
+# ── Support / Contact section ─────────────────────────────────
+support:
+  eyebrow: Support & Enquiries
+  title: Get in Touch
+  intro: >
+    Have a project in mind? Need technical support for an existing installation?
+    Complete the form below and a member of our team will respond within one
+    business day.
+  form_fields:
+    - name: name
+      label: Full Name
+      type: text
+      required: true
+    - name: email
+      label: Email Address
+      type: email
+      required: true
+    - name: phone
+      label: Phone Number
+      type: tel
+      required: false
+    - name: company
+      label: Company
+      type: text
+      required: false
+    - name: enquiry_type
+      label: Enquiry Type
+      type: select
+      required: true
+      options:
+        - New project enquiry
+        - Technical support
+        - Product information
+        - Partnership / reseller
+        - Other
+    - name: message
+      label: Message
+      type: textarea
+      required: true
+
+# ── Join Us section ───────────────────────────────────────────
+join_us:
+  eyebrow: Join Us
+  title: Work at Northstar Visual
+  body: >
+    We're always interested in meeting talented engineers, project managers,
+    and AV professionals. If you share our commitment to technical excellence
+    and outstanding service, we'd like to hear from you.
+  roles:
+    - title: LED Installation Engineer
+      type: Full-time
+      location: UK-wide (field-based)
+      description: >
+        Experienced LED installation engineer required for commercial and
+        broadcast projects across the UK. NVQ Level 3 in Electrotechnical
+        Services or equivalent preferred.
+    - title: Project Manager — AV & LED
+      type: Full-time
+      location: London (hybrid)
+      description: >
+        Project manager with proven AV or LED installation background to
+        lead client projects from survey to commissioning. Strong client
+        communication skills essential.
+    - title: Speculative Applications
+      type: ""
+      location: All locations considered
+      description: >
+        Don't see a role that fits? Send us your CV and a brief covering
+        note — we consider all strong speculative applications.
+  cta_label: Send Your CV
+  cta_email: careers@northstarvisual.co.uk
